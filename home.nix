@@ -54,53 +54,51 @@
     pkgs.thefuck
     ### https://github.com/wting/autojump
     pkgs.autojump
-
     ### https://github.com/junegunn/fzf
     pkgs.fzf
     ### https://github.com/ajeetdsouza/zoxide
     pkgs.zoxide
-
+    ### https://github.com/AGWA/git-crypt
     pkgs.git-crypt
     pkgs.git
+    ### https://github.com/jqlang/jq
     pkgs.jq
-    
     ### tui https://github.com/noahgorstein/jqp
     pkgs.jqp
     ### https://github.com/mikefarah/yq
     pkgs.yq
     ### https://github.com/carvel-dev/ytt
     pkgs.ytt
-
+    ### https://github.com/neovim/neovim
+    ### https://github.com/nvim-lua/kickstart.nvim
     pkgs.neovim
     pkgs.tmux
+    ### https://github.com/zellij-org/zellij
     pkgs.zellij
-
+    ### fonts
     pkgs.nerdfonts
     pkgs.font-awesome
     pkgs.powerline-fonts
-
+    ### https://github.com/nix-community/nix-direnv #todo dmz check
     pkgs.direnv
-
     ### https://github.com/denisidoro/navi
     pkgs.navi
-
     ### https://github.com/jesseduffield/lazydocker
     pkgs.lazydocker
     ### https://github.com/wagoodman/dive
     pkgs.dive
     ### https://github.com/knqyf263/pet
     pkgs.pet
-
     ### https://github.com/espanso/espanso
     pkgs.espanso
-
-
     ### https://github.com/openziti/zrok
     pkgs.zrok
-
+    ### https://code.blicky.net/yorhel/ncdu
+    ### https://dev.yorhel.nl/ncdu
     pkgs.ncdu
-
+    ### https://github.com/sxyazi/yazi
     pkgs.yazi
+
     pkgs.ripgrep # rg
     pkgs.unar
 
