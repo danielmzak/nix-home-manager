@@ -72,6 +72,7 @@
     ### https://github.com/neovim/neovim
     ### https://github.com/nvim-lua/kickstart.nvim
     pkgs.neovim
+    ### https://github.com/tmux/tmux
     pkgs.tmux
     ### https://github.com/zellij-org/zellij
     pkgs.zellij
@@ -98,8 +99,10 @@
     pkgs.ncdu
     ### https://github.com/sxyazi/yazi
     pkgs.yazi
-
-    pkgs.ripgrep # rg
+    ### https://github.com/BurntSushi/ripgrep
+    ### rg
+    pkgs.ripgrep
+    ### https://github.com/pmachapman/unrar
     pkgs.unar
 
     # pkgs.neovide
@@ -109,13 +112,18 @@
     pkgs.oh-my-zsh
     pkgs.nushell
 
+    ### https://github.com/htop-dev/htop
     pkgs.htop
     ### https://github.com/wtfutil/wtf
     pkgs.wtf
+    ### https://github.com/jesseduffield/lazygit
     pkgs.lazygit
+    ### https://github.com/dylanaraps/neofetch
     pkgs.neofetch
 
+    ### https://github.com/ansible/ansible
     pkgs.ansible
+    ### https://github.com/TizenTeam/dos2unix
     pkgs.dos2unix
 
     ### https://github.com/facebook/zstd
@@ -126,39 +134,42 @@
     # media
     pkgs.imagemagick
 
+    ### https://github.com/grafana/k6
     pkgs.k6
-
+    ### https://www.lua.org/
     pkgs.lua
-
+    ### https://diffoscope.org/
     pkgs.diffoscope
+    ### https://github.com/vifm/vifm
     pkgs.vifm
-    # https://github.com/atuinsh/atuin
+    ### https://github.com/atuinsh/atuin
     pkgs.atuin
-    # https://github.com/sharkdp/hexyl
+    ### tui https://github.com/sharkdp/hexyl
     pkgs.hexyl
-
-    # https://github.com/tldr-pages/tldr
+    ### https://github.com/tldr-pages/tldr
     pkgs.tldr
 
+    ### https://meldmerge.org/
     pkgs.meld
+    ### https://github.com/FiloSottile/age
     pkgs.age
-
+    ### https://github.com/romkatv/powerlevel10k
     pkgs.zsh-powerlevel10k
     # opengl wrapper
     pkgs.glfw
 
-
-    # copy/paste
+    ### copy/paste
     pkgs.xclip
     pkgs.xsel
 
+    ### https://github.com/derailed/k9s
     pkgs.k9s
+    ### https://github.com/terrastruct/d2
     pkgs.d2
+    ### https://github.com/rclone/rclone
     pkgs.rclone
-
     # https://github.com/Slackadays/clipboard/
     pkgs.clipboard-jh
-
 
     # pkgs.google-cloud-sdk
     (pkgs.google-cloud-sdk.withExtraComponents [
@@ -210,8 +221,6 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
-  # 
 
   programs = {
     atuin = {
@@ -266,7 +275,6 @@
       };
 	    theme = "Everforest Dark Medium";
 	  };
-
 
     zsh = {
       enable = true;
