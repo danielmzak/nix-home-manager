@@ -191,8 +191,12 @@
     pkgs.glfw #todo dmz - check
 
     #
-    # gcloud sdk
+    # cloud(s)
     #
+
+    # pkgs.telepresence2
+    # pkgs.terraform
+    # pkgs.terragrunt
 
     # pkgs.google-cloud-sdk
     (pkgs.google-cloud-sdk.withExtraComponents [
