@@ -334,10 +334,6 @@
         '';
       
       shellAliases = {
-
-        # obsh = "flatpak run md.obsidian.Obsidian obsidian://open?docu";
-        # obsw = "flatpak run md.obsidian.Obsidian obsidian://open?infra";
-
         n = "nvim";
         nn = "cd /home/dmz/Workspace/cz8/notes && code .";
         s = "kitten ssh";
