@@ -1,5 +1,4 @@
-# export NIXPKGS_ALLOW_UNFREE=1;
-# export NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1
+#
 # home-manager switch --impure
 #
 
@@ -40,16 +39,30 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
 
-    ### https://github.com/eza-community/eza
-    pkgs.eza
-    ### https://github.com/sharkdp/bat 
-    pkgs.bat
-    ### https://github.com/XAMPPRocky/tokei
-    pkgs.tokei
-    ### https://github.com/BurntSushi/xsv
-    pkgs.xsv
+    #
+    # shell(s) 
+    #
+
+    pkgs.zsh
+    pkgs.oh-my-zsh
+    pkgs.nushell
+    ### fonts
+    pkgs.nerdfonts
+    pkgs.font-awesome
+    pkgs.powerline-fonts
+
+    ### https://github.com/romkatv/powerlevel10k
+    pkgs.zsh-powerlevel10k
+
+    #
+    # cli/tui sys tools
+    #
+
     ### https://github.com/sharkdp/fd
     pkgs.fd
+    ### https://github.com/BurntSushi/ripgrep
+    ### rg
+    pkgs.ripgrep
     ### https://github.com/nvbn/thefuck
     pkgs.thefuck
     ### https://github.com/wting/autojump
@@ -58,88 +71,40 @@
     pkgs.fzf
     ### https://github.com/ajeetdsouza/zoxide
     pkgs.zoxide
-    ### https://github.com/AGWA/git-crypt
-    pkgs.git-crypt
-    pkgs.git
-    ### https://github.com/jqlang/jq
-    pkgs.jq
-    ### tui https://github.com/noahgorstein/jqp
-    pkgs.jqp
-    ### https://github.com/mikefarah/yq
-    pkgs.yq
-    ### https://github.com/carvel-dev/ytt
-    pkgs.ytt
-    ### https://github.com/neovim/neovim
-    ### https://github.com/nvim-lua/kickstart.nvim
-    pkgs.neovim
-    ### https://github.com/tmux/tmux
-    pkgs.tmux
-    ### https://github.com/zellij-org/zellij
-    pkgs.zellij
-    ### fonts
-    pkgs.nerdfonts
-    pkgs.font-awesome
-    pkgs.powerline-fonts
-    ### https://github.com/nix-community/nix-direnv #todo dmz check
-    pkgs.direnv
-    ### https://github.com/denisidoro/navi
-    pkgs.navi
-    ### https://github.com/jesseduffield/lazydocker
-    pkgs.lazydocker
-    ### https://github.com/wagoodman/dive
-    pkgs.dive
+    ### https://github.com/eza-community/eza
+    pkgs.eza
+    ### https://github.com/sharkdp/bat 
+    pkgs.bat
+    ### https://code.blicky.net/yorhel/ncdu
+    ### https://dev.yorhel.nl/ncdu
+    pkgs.ncdu
+
+    ### copy/paste
+    pkgs.xclip
+    pkgs.xsel
+
     ### https://github.com/knqyf263/pet
     pkgs.pet
     ### https://github.com/espanso/espanso
     pkgs.espanso
-    ### https://github.com/openziti/zrok
-    pkgs.zrok
-    ### https://code.blicky.net/yorhel/ncdu
-    ### https://dev.yorhel.nl/ncdu
-    pkgs.ncdu
-    ### https://github.com/sxyazi/yazi
-    pkgs.yazi
-    ### https://github.com/BurntSushi/ripgrep
-    ### rg
-    pkgs.ripgrep
     ### https://github.com/pmachapman/unrar
     pkgs.unar
-
-    # pkgs.neovide
-
-    # ---
-    pkgs.zsh
-    pkgs.oh-my-zsh
-    pkgs.nushell
-
     ### https://github.com/htop-dev/htop
     pkgs.htop
     ### https://github.com/wtfutil/wtf
     pkgs.wtf
-    ### https://github.com/jesseduffield/lazygit
-    pkgs.lazygit
+    ### https://github.com/sxyazi/yazi
+    pkgs.yazi
     ### https://github.com/dylanaraps/neofetch
     pkgs.neofetch
-
     ### https://github.com/ansible/ansible
     pkgs.ansible
     ### https://github.com/TizenTeam/dos2unix
     pkgs.dos2unix
-
     ### https://github.com/facebook/zstd
     pkgs.zstd
     ### https://github.com/restic/restic
     pkgs.restic
-
-    # media
-    pkgs.imagemagick
-
-    ### https://github.com/grafana/k6
-    pkgs.k6
-    ### https://www.lua.org/
-    pkgs.lua
-    ### https://diffoscope.org/
-    pkgs.diffoscope
     ### https://github.com/vifm/vifm
     pkgs.vifm
     ### https://github.com/atuinsh/atuin
@@ -148,28 +113,86 @@
     pkgs.hexyl
     ### https://github.com/tldr-pages/tldr
     pkgs.tldr
-
-    ### https://meldmerge.org/
-    pkgs.meld
-    ### https://github.com/FiloSottile/age
-    pkgs.age
-    ### https://github.com/romkatv/powerlevel10k
-    pkgs.zsh-powerlevel10k
-    # opengl wrapper
-    pkgs.glfw
-
-    ### copy/paste
-    pkgs.xclip
-    pkgs.xsel
-
-    ### https://github.com/derailed/k9s
-    pkgs.k9s
-    ### https://github.com/terrastruct/d2
-    pkgs.d2
     ### https://github.com/rclone/rclone
     pkgs.rclone
     # https://github.com/Slackadays/clipboard/
     pkgs.clipboard-jh
+    ### https://github.com/FiloSottile/age
+    pkgs.age
+    ### https://github.com/derailed/k9s
+    pkgs.k9s
+    ### https://github.com/terrastruct/d2
+    pkgs.d2
+
+    #
+    # dev tools
+    #
+
+    ## https://github.com/jqlang/jq
+    pkgs.jq
+    ### tui https://github.com/noahgorstein/jqp
+    pkgs.jqp
+    ### https://github.com/mikefarah/yq
+    pkgs.yq
+    ### https://github.com/carvel-dev/ytt
+    pkgs.ytt
+    ### https://github.com/BurntSushi/xsv
+    pkgs.xsv
+    ### https://github.com/neovim/neovim
+    ### https://github.com/nvim-lua/kickstart.nvim
+    pkgs.neovim
+    ### https://github.com/tmux/tmux
+    pkgs.tmux
+    ### https://github.com/zellij-org/zellij
+    pkgs.zellij
+    ### https://github.com/AGWA/git-crypt
+    pkgs.git-crypt
+    pkgs.git
+    ### https://github.com/XAMPPRocky/tokei
+    pkgs.tokei
+    ### https://github.com/openziti/zrok
+    pkgs.zrok
+    ### https://github.com/nix-community/nix-direnv #todo dmz check
+    pkgs.direnv
+    ### https://github.com/denisidoro/navi
+    pkgs.navi
+    ### https://github.com/jesseduffield/lazydocker
+    pkgs.lazydocker
+    ### https://github.com/wagoodman/dive
+    pkgs.dive
+    ### https://github.com/jesseduffield/lazygit
+    pkgs.lazygit
+    ### https://github.com/grafana/k6
+    pkgs.k6
+    ### https://www.lua.org/
+    pkgs.lua
+    ### https://diffoscope.org/
+    pkgs.diffoscope
+    
+    #
+    # dev gui
+    #
+    
+    ### https://meldmerge.org/
+    pkgs.meld
+    # pkgs.neovide
+
+    #
+    # media
+    #
+
+    ### https://github.com/ImageMagick/ImageMagick
+    pkgs.imagemagick
+
+    #
+    # others
+    #
+    
+    pkgs.glfw #todo dmz - check
+
+    #
+    # gcloud sdk
+    #
 
     # pkgs.google-cloud-sdk
     (pkgs.google-cloud-sdk.withExtraComponents [
@@ -349,18 +372,11 @@
           src = pkgs.zsh-powerlevel10k;
           file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
         }
-        # {
-        # name = "powerlevel10k-config";
-        # src = ./p10k-config;
-        # # src = ../../config/zsh/p10k;
-        # file = "p10k.zsh";
-        # }
       ];
 
       oh-my-zsh = {
         enable = true;
         plugins = [ "git" "thefuck" "kubectl" "docker" "common-aliases" "dirhistory" "helm" "history" "web-search" "terraform"];
-        # theme = "robbyrussell";
       };
     };
   };
