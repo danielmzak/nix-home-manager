@@ -124,6 +124,9 @@
     ### https://github.com/terrastruct/d2
     pkgs.d2
 
+    ### https://github.com/ddclient/ddclient
+    # pkgs.ddclient
+
     #
     # dev tools
     #
@@ -299,6 +302,7 @@
         "alt+8" = "goto_tab 8";
         "alt+9" = "goto_tab 9";
         "alt+0" = "goto_tab 10";
+        "alt+b" = "pipe @ansi overlay /home/dmz/Workspace/cz8/notes/bookmarks/lnks.sh";
       };
 	    theme = "Everforest Dark Medium";
 	  };
@@ -350,8 +354,6 @@
 
         curltime = "curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s ";
         watchh = "watch ";
-
-        b = "cd ~/Workspace/cz8/notes/bookmarks && ./lnks.sh";
 
         bat = "batcat --paging=never";
         ls = "eza -l --group-directories-first --color=auto --git --icons --no-permissions --no-user";
