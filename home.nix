@@ -191,7 +191,7 @@
     # others
     #
     
-    pkgs.glfw #todo dmz - check
+    # pkgs.glfw #todo dmz - check
 
     #
     # cloud(s)
@@ -302,7 +302,7 @@
         "alt+8" = "goto_tab 8";
         "alt+9" = "goto_tab 9";
         "alt+0" = "goto_tab 10";
-        "alt+b" = "pipe @ansi overlay /home/dmz/Workspace/cz8/notes/bookmarks/lnks.sh";
+        "alt+b" = "launch --allow-remote-control --type overlay zsh -c '/home/dmz/Workspace/cz8/notes/bookmarks/lnks.sh'";
       };
 	    theme = "Everforest Dark Medium";
 	  };
