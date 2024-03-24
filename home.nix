@@ -289,6 +289,7 @@
 		      size = 13;
 	    };
 	    settings = {
+        allow_remote_control = true;
 		    enable_audio_bell = false;
 	    };
       keybindings = {
@@ -302,7 +303,7 @@
         "alt+8" = "goto_tab 8";
         "alt+9" = "goto_tab 9";
         "alt+0" = "goto_tab 10";
-        "alt+b" = "launch --allow-remote-control --type overlay zsh -c '/home/dmz/Workspace/cz8/notes/bookmarks/lnks.sh'";
+        "alt+b" = "launch --type overlay /home/dmz/Workspace/cz8/notes/bookmarks/lnks.sh";
       };
 	    theme = "Everforest Dark Medium";
 	  };
