@@ -103,6 +103,8 @@
     pkgs.dos2unix
     ### https://github.com/facebook/zstd
     pkgs.zstd
+    ### https://apps.ankiweb.net/
+    pkgs.xz
     ### https://github.com/restic/restic
     pkgs.restic
     ### https://github.com/vifm/vifm
