@@ -173,7 +173,10 @@
     pkgs.lua
     ### https://diffoscope.org/
     pkgs.diffoscope
-    
+
+    ### https://github.com/Kitware/CMake
+    # pkgs.cmake
+
     #
     # dev gui
     #
@@ -250,6 +253,10 @@
     BROWSER = "chrome";
     TERMINAL = "kitty";
   };
+
+  home.sessionPath = [
+    "$HOME/Bin/flutter/bin:$PATH"
+  ];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
@@ -342,8 +349,13 @@
 
         # key bindings
         bindkey "^H" backward-delete-word
+
+        function prev() {
+          PREV=$(fc -lrn | head -n 1)
+          sh -c "pet new `printf %q "$PREV"`"
+        }
         '';
-      
+
       shellAliases = {
         n = "nvim";
         nn = "cd /home/dmz/Workspace/cz8/notes && code .";
@@ -366,6 +378,7 @@
 
         # gssr = "find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd {} && git status -s && echo)' \;";
         # gssb = "ls -1 | xargs -i sh -c 'echo -n "\""{}: "\""; git -C "\""{}"\"" name-rev --name-only --no-undefined --always HEAD'";
+
       };
 
       history.size = 10000; # using atuin
