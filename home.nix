@@ -364,6 +364,9 @@
         nv = "neovide";
         tp = "telepresence";
 
+        fd = "fd --hidden --exclude '.git'";
+        rg = "rg --no-ignore --hidden";
+
         epet = "code ~/.config/pet/snippet.toml";
         ehome = "code ~/.config/home-manager/home.nix";
 
