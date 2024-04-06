@@ -364,10 +364,14 @@
         nv = "neovide";
         tp = "telepresence";
 
+        epet = "code ~/.config/pet/snippet.toml";
+        ehome = "code ~/.config/home-manager/home.nix";
+
         pbcopy = "xclip -selection clipboard";
         pbpaste = "xclip -selection clipboard -o";
 
         curltime = "curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s ";
+        curlip = "curl ifconfig.me";
         watchh = "watch ";
 
         bat = "batcat --paging=never";
