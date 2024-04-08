@@ -8,7 +8,7 @@
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "dmz";
-  home.homeDirectory = "/home/dmz";
+    home.homeDirectory = "/home/dmz";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -173,6 +173,8 @@
     pkgs.lua
     ### https://diffoscope.org/
     pkgs.diffoscope
+    ### https://github.com/conda/conda
+    pkgs.conda
 
     ### https://github.com/Kitware/CMake
     # pkgs.cmake
