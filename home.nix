@@ -174,6 +174,8 @@
     ### https://diffoscope.org/
     pkgs.diffoscope
     ### https://github.com/conda/conda
+    # $ conda-shell
+    # $ conda 
     pkgs.conda
 
     ### https://github.com/Kitware/CMake
