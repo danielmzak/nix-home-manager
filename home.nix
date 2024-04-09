@@ -172,7 +172,7 @@
     ### https://www.lua.org/
     pkgs.lua
     ### https://diffoscope.org/
-    pkgs.diffoscope
+    # pkgs.diffoscope
     ### https://github.com/conda/conda
     # $ conda-shell
     # $ conda 
