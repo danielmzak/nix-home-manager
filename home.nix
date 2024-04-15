@@ -126,6 +126,13 @@
     ### https://github.com/terrastruct/d2
     pkgs.d2
 
+    ### https://github.com/GothenburgBitFactory/taskwarrior
+    pkgs.taskwarrior
+    ### https://github.com/GothenburgBitFactory/timewarrior
+    pkgs.timewarrior
+    ### https://github.com/kdheepak/taskwarrior-tui
+    pkgs.taskwarrior-tui
+
     ### https://github.com/ddclient/ddclient
     # pkgs.ddclient
 
@@ -199,6 +206,10 @@
     #
     # others
     #
+
+    ### https://github.com/altdesktop/playerctl
+    pkgs.playerctl
+
     
     # pkgs.glfw #todo dmz - check
 
