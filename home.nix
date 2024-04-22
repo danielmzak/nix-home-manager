@@ -270,7 +270,7 @@
   };
 
   home.sessionPath = [
-    "$HOME/Bin/flutter/bin:$PATH"
+    "$HOME/Bin/flutter/bin:$HOME/.local/bin:$PATH"
   ];
 
   # Let Home Manager install and manage itself.
@@ -335,7 +335,7 @@
     zsh = {
       enable = true;
       enableCompletion = true;
-      enableAutosuggestions = true;
+      autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
       autocd = true;
 
