@@ -78,6 +78,8 @@
     ### https://code.blicky.net/yorhel/ncdu
     ### https://dev.yorhel.nl/ncdu
     pkgs.ncdu
+    ### https://github.com/fujiapple852/trippy
+    pkgs.trippy
 
     ### copy/paste
     pkgs.xclip
