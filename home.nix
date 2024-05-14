@@ -205,6 +205,8 @@
     ### https://github.com/ImageMagick/ImageMagick
     pkgs.imagemagick
 
+    pkgs.ffmpeg-full
+
     #
     # others
     #
@@ -364,6 +366,10 @@
         # Print tree structure in the preview window
         export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 
+        # https://github.com/danielmzak/cli-prompt-organizer/tree/main
+        export PROMPT_PATH="/home/dmz/Workspace/cz8/notes/ai/prompt"
+        export PROMPT_INBOX_PATH="/home/dmz/Workspace/cz8/notes/ai/prompt/_inbox"
+
         # key bindings
         bindkey "^H" backward-delete-word
 
@@ -380,6 +386,7 @@
         i = "idea -e";
         nv = "neovide";
         tp = "telepresence";
+        pi = "/home/dmz/Workspace/cz8/github/cli-prompt-organizer/pinbox.sh";
 
         fd = "fd --hidden --exclude '.git'";
         rg = "rg --no-ignore --hidden";
