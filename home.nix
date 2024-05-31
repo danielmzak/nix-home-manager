@@ -128,16 +128,6 @@
     ### https://github.com/terrastruct/d2
     pkgs.d2
 
-    ### https://github.com/GothenburgBitFactory/taskwarrior
-    pkgs.taskwarrior
-    ### https://github.com/GothenburgBitFactory/timewarrior
-    pkgs.timewarrior
-    ### https://github.com/kdheepak/taskwarrior-tui
-    pkgs.taskwarrior-tui
-
-    ### https://github.com/ddclient/ddclient
-    # pkgs.ddclient
-
     #
     # dev tools
     #
@@ -186,6 +176,8 @@
     # $ conda-shell
     # $ conda 
     pkgs.conda
+    ### https://www.rust-lang.org/
+    pkgs.rustc
 
     ### https://github.com/Kitware/CMake
     # pkgs.cmake
