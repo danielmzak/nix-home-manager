@@ -266,7 +266,7 @@
   };
 
   home.sessionPath = [
-    "$HOME/Bin/flutter/bin:$HOME/.local/bin:$PATH"
+    "$HOME/Bin/flutter/bin:$HOME/.local/bin:$PATH:$HOME/Bin/apps/AliceVision"
   ];
 
   # Let Home Manager install and manage itself.
@@ -287,7 +287,7 @@
 
     direnv = {
       enable = true;
-      enableBashIntegration = true; # see note on other shells below
+      enableZshIntegration = true; # see note on other shells below
       nix-direnv.enable = true;
     };
 
