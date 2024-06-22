@@ -80,6 +80,11 @@
     pkgs.ncdu
     ### https://github.com/fujiapple852/trippy
     pkgs.trippy
+    ### https://nmap.org/
+    pkgs.nmap
+    pkgs.whois
+    ### https://github.com/andreafrancia/trash-cli
+    pkgs.trash-cli
 
     ### copy/paste
     pkgs.xclip
@@ -151,7 +156,10 @@
     pkgs.zellij
     ### https://github.com/AGWA/git-crypt
     pkgs.git-crypt
+    ### https://www.git-scm.com/
     pkgs.git
+    ### https://github.com/nosarthur/gita
+    pkgs.gita
     ### https://github.com/XAMPPRocky/tokei
     pkgs.tokei
     ### https://github.com/openziti/zrok
@@ -178,6 +186,8 @@
     pkgs.conda
     ### https://www.rust-lang.org/
     pkgs.rustc
+
+    pkgs.kubernetes-helm
 
     ### https://github.com/Kitware/CMake
     # pkgs.cmake
@@ -266,7 +276,7 @@
   };
 
   home.sessionPath = [
-    "$HOME/Bin/flutter/bin:$HOME/.local/bin:$PATH:$HOME/Bin/apps/AliceVision"
+    "$HOME/Bin/flutter/bin:$HOME/.local/bin:$PATH:$HOME/Bin/apps/AliceVision:$HOME/Bin/scripts"
   ];
 
   # Let Home Manager install and manage itself.
