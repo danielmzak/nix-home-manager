@@ -271,16 +271,17 @@
   home.sessionVariables = {
     NIXPKGS_ALLOW_UNFREE = 1;
     NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM = 1;
-    # kitty fix slow
-    # LIBGL_ALWAYS_SOFTWARE = "true kitty"; 
     USE_GKE_GCLOUD_AUTH_PLUGIN = "True";
     EDITOR = "nvim";
     BROWSER = "chrome";
-    TERMINAL = "kitty";
+    TERMINAL = "wezterm";
+    JAVA_HOME = "$HOME/Bin/sdk/jdk-21.0.3+9";
+    GRADLE_HOME = "$HOME/Bin/sdk/gradle-8.7";
+    MAVEN_HOME = "$HOME/Bin/sdk/apache-maven-3.9.8";
   };
 
   home.sessionPath = [
-    "$HOME/Bin/flutter/bin:$HOME/.local/bin:$PATH:$HOME/Bin/apps/AliceVision:$HOME/Bin/scripts"
+    "$HOME/Bin/flutter/bin:$HOME/.local/bin:$PATH:$HOME/Bin/apps/AliceVision:$HOME/Bin/scripts:$HOME/Bin/sdk/gradle-8.7/bin:$HOME/Bin/sdk/apache-maven-3.9.8/bin"
   ];
 
   # Let Home Manager install and manage itself.
