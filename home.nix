@@ -215,6 +215,7 @@
 
     ### https://github.com/altdesktop/playerctl
     pkgs.playerctl
+    # pkgs.love -> check opengl problem in nix
 
     
     # pkgs.glfw #todo dmz - check
@@ -232,6 +233,9 @@
       pkgs.google-cloud-sdk.components.gke-gcloud-auth-plugin 
       pkgs.google-cloud-sdk.components.kubectl
     ])
+
+    ### https://docs.openshift.com/container-platform/4.16/welcome/index.html
+    pkgs.openshift
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
