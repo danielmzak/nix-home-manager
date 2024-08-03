@@ -85,6 +85,8 @@
     pkgs.whois
     ### https://github.com/andreafrancia/trash-cli
     pkgs.trash-cli
+    ### https://github.com/jgm/pandoc
+    pkgs.pandoc
 
     ### copy/paste
     pkgs.xclip
@@ -275,7 +277,7 @@
     EDITOR = "nvim";
     BROWSER = "chrome";
     TERMINAL = "wezterm";
-    JAVA_HOME = "$HOME/Bin/sdk/jdk-21.0.3+9";
+    JAVA_HOME = "$HOME/Bin/sdk/jdk-21.0.3";
     GRADLE_HOME = "$HOME/Bin/sdk/gradle-8.7";
     MAVEN_HOME = "$HOME/Bin/sdk/apache-maven-3.9.8";
   };
